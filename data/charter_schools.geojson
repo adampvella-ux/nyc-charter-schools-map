@@ -3,8 +3,8 @@
  "metadata": {
   "roster": "NYSED Charter School Directory, as of 2025-09-02 (2025-26 school year)",
   "locations": "NCES EDGE Public School Locations 2024-25; authorizer addresses for schools opened 2025+",
-  "mapped": 291,
-  "unmapped": 8
+  "mapped": 293,
+  "unmapped": 6
  },
  "features": [
   {
@@ -2227,6 +2227,28 @@
     "location_source": "nces",
     "precision": "geocoded",
     "nces_id": "360099406151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.9866,
+     40.7044
+    ]
+   },
+   "properties": {
+    "name": "Explore Enrich Charter School",
+    "borough": "Brooklyn",
+    "district": "NYC CSD 17",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "331700861047",
+    "address": "20 Jay St, Suite 504, Brooklyn, NY 11201",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://opengovny.com/school/331700861047"
    }
   },
   {
@@ -5769,6 +5791,28 @@
     "location_source": "nces",
     "precision": "geocoded",
     "nces_id": "360094405974"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.9418,
+     40.6766
+    ]
+   },
+   "properties": {
+    "name": "Uncommon New York City Charter School #1",
+    "borough": "Brooklyn",
+    "district": "NYC CSD 13",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "331300861119",
+    "address": "1485 Pacific St, Brooklyn, NY 11216",
+    "location_source": "authorizer",
+    "precision": "neighborhood",
+    "source_url": "https://www.greatschools.org/new-york/brooklyn/18375-Uncommon-New-York-City-Charter-1/"
    }
   },
   {

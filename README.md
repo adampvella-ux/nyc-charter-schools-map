@@ -4,7 +4,7 @@ An interactive map of New York City's charter schools for the 2025–26 school y
 
 **Live map:** `https://<your-username>.github.io/nyc-charter-schools-map/`
 
-- **291 of the 299 schools** on the state roster mapped across all five boroughs
+- **293 of the 299 schools** on the state roster mapped across all five boroughs
 - Search by name or address, and filter by borough or authorizer
 - Click any school for its address, community school district, year opened and authorizer
 - Download the cleaned data as [CSV](data/charter_schools.csv) or [GeoJSON](data/charter_schools.geojson)
@@ -15,7 +15,7 @@ An interactive map of New York City's charter schools for the 2025–26 school y
 |---|---|---|
 | Which schools exist | [NYSED Charter School Directory](https://www.nysed.gov/charter-schools/charter-schools-directory) (Excel) | Sep 2, 2025 (2025–26 roster) |
 | Where they are | [NCES EDGE Public School Locations 2024–25](https://data-nces.opendata.arcgis.com/datasets/nces::public-school-locations-2024-25) | 2024–25 school year |
-| Where the newest schools are | [SUNY Charter Schools Institute](https://www.newyorkcharters.org/charter-schools/?region=nyc) school pages, [InsideSchools](https://insideschools.org/) | Checked Oct 2026 |
+| Where the newest schools are | [SUNY Charter Schools Institute](https://www.newyorkcharters.org/charter-schools/?region=nyc) school pages, [InsideSchools](https://insideschools.org/), GreatSchools, state BEDS record | Checked Oct 2026 |
 
 The state directory is the official list of charter schools, but it has no addresses or coordinates. NCES publishes geocoded locations for every US public school. This project uses the state list to decide *which* schools to show, and NCES to decide *where* to put them.
 
@@ -32,7 +32,7 @@ These are the most recent official releases. No 2026–27 roster with locations 
    - 1 matched by fuzzy name similarity (≥ 0.85). Fuzzy matches must also have the same trailing number, so "South Bronx Classical V" can never match "South Bronx Classical IV".
    - 8 matched by hand, where NCES truncates or abbreviates the name (for example "COLLEGIATE ACADEMY-MATH-PERSONAL AWA"). These are listed in the script.
    - The script stops with an error if two roster schools land on the same location.
-4. **Newest schools:** schools that opened in fall 2025 or later aren't in the NCES 2024–25 file. For 10 of them, addresses come from their authorizer's records, listed with source links in [`data/new_school_addresses.csv`](data/new_school_addresses.csv). Their coordinates were estimated by hand from the address and nearby schools with known coordinates, so each is marked as accurate to a block or a neighborhood. They show on the map as dashed pins.
+4. **Newest schools:** schools that opened in fall 2025 or later aren't in the NCES 2024–25 file. For 12 of them, addresses come from authorizer records and school directories, listed with source links in [`data/new_school_addresses.csv`](data/new_school_addresses.csv). Their coordinates were estimated by hand from the address and nearby schools with known coordinates, so each is marked as accurate to a block or a neighborhood. They show on the map as dashed pins.
 
 ```bash
 pip install pandas openpyxl
@@ -41,8 +41,8 @@ python scripts/build_data.py
 
 ## Limitations
 
-- **8 schools aren't on the map.** They opened in fall 2025 or 2026, and neither the federal data nor their authorizer has published a street address yet. Several likely operate inside an existing network school's building. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv).
-- **10 pins are approximate.** The dashed pins for the newest schools are placed by hand. Once NCES publishes 2025–26 locations, rerunning the build with that file will give exact positions.
+- **6 schools aren't on the map.** They opened in fall 2025 or 2026, and neither the federal data nor their authorizer has published a street address yet. Several likely operate inside an existing network school's building. Explore Enrich is mapped at its state-registered address, a suite in the building that also houses the Explore network office. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv).
+- **12 pins are approximate.** The dashed pins for the newest schools are placed by hand. Once NCES publishes 2025–26 locations, rerunning the build with that file will give exact positions.
 - **Updated locations.** Success Academy NYC 17 is listed in the Bronx on the September 2025 state roster, but its authorizer now places it in Ridgewood, Queens. The map uses the authorizer's address. The roster's "Zeta Charter School - Queens 2" appears to be the campus SUNY calls Zeta Queens Flushing.
 - **One point per school, not per campus.** Some charter schools operate several buildings. The state roster lists 299 NYC schools, while the [NYC Charter Center](https://findnyccharterschools.org/) counts roughly 430 campuses. Each school is mapped at the main address it reports to the federal government.
 - **Addresses are as reported for 2024–25.** A school that moved since then will show its previous location.

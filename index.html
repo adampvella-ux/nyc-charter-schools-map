@@ -123,7 +123,7 @@ function popup(p) {
     <dt>Opened</dt><dd>${p.year_opened}</dd>
     <dt>Authorizer</dt><dd>${esc(AUTH_LABEL[p.authorizer] || p.authorizer)}</dd>
   </dl>${p.location_source === "authorizer"
-    ? `<p class="note">Opened ${p.year_opened}, so not yet in federal location data. Address from <a href="${esc(p.source_url)}" target="_blank" rel="noopener">authorizer records</a>; pin placed approximately (${esc(p.precision)}-level).</p>`
+    ? `<p class="note">Opened ${p.year_opened}, so not yet in federal location data. Address from <a href="${esc(p.source_url)}" target="_blank" rel="noopener">this source</a>; pin placed approximately (${esc(p.precision)}-level).</p>`
     : ""}`;
 }
 
@@ -181,7 +181,7 @@ fetch("data/charter_schools.geojson")
     document.getElementById("total").textContent = schools.length;
     map.fitBounds(L.featureGroup(schools.map(s => s.marker)).getBounds(), { padding: [20, 20] });
     document.getElementById("unmapped-note").textContent =
-      `Dashed pins are schools opened since 2025, placed from authorizer addresses. ${geo.metadata.unmapped} newer schools have no published address yet (see README). `;
+      `Dashed pins are schools opened since 2025, placed from published addresses. ${geo.metadata.unmapped} newer schools have no published address yet (see README). `;
     render();
   })
   .catch(() => {
