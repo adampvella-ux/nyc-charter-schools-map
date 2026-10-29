@@ -2,7 +2,7 @@
 
 An interactive map of New York City's charter schools for the 2025–26 school year.
 
-**Live map:** `https://<your-username>.github.io/nyc-charter-schools-map/`
+**Live map:** https://adampvella-ux.github.io/nyc-charter-schools-map/
 
 - **293 of the 299 schools** on the state roster mapped across all five boroughs
 - Search by name or address, and filter by borough or authorizer
