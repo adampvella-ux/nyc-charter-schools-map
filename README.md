@@ -39,7 +39,7 @@ python scripts/build_data.py
 
 ## Limitations
 
-- **18 newer schools aren't on the map.** They opened in fall 2025 or 2026, after the NCES 2024–25 location data. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv), and the build adds them automatically once NCES publishes 2025–26 locations.
+- **18 newer schools aren't on the map.** They opened in fall 2025 or 2026, after the NCES 2024–25 location data. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv), and rerunning the build with the 2025–26 NCES file (once published) will place them.
 - **One point per school, not per campus.** Some charter schools operate several buildings. The state roster lists 299 NYC schools, while the [NYC Charter Center](https://findnyccharterschools.org/) counts roughly 430 campuses. Each school is mapped at the main address it reports to the federal government.
 - **Addresses are as reported for 2024–25.** A school that moved since then will show its previous location.
 
