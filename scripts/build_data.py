@@ -152,6 +152,9 @@ def main() -> None:
             mapped.append(rec)
             continue
         loc = locs.loc[s["nces_row"]]
+        # Borough follows the address actually shown (NCES county), which can
+        # differ from the roster county, e.g. AF Legacy lists a Queens address.
+        rec["borough"] = BOROUGH[loc["county"]]
         rec.update({
             "address": f"{title_address(loc['STREET'])}, {loc['CITY'].title()}, NY {loc['ZIP']}",
             "location_source": "nces",
