@@ -78,4 +78,4 @@ data/raw/                  original source files
 scripts/build_data.py      rebuilds data/ from data/raw/
 ```
 
-Built with [Leaflet](https://leafletjs.com/). Basemap © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, © [CARTO](https://carto.com/attributions).
+Built with [Leaflet](https://leafletjs.com/). Basemap © [Esri](https://www.esri.com/) World Light Gray Canvas, with data from © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors and others.
