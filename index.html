@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NYC Charter Schools Map</title>
+<meta name="description" content="Interactive map of New York City charter schools, 2025–26, from NYSED and NCES data.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+  :root {
+    --bg: #f7f6f3; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #e4e2dc;
+    --suny: #2f6fb3; --regents: #c2571a; --doe: #2e8b57; --accent: #1d1d1b;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  .app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
+  aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  header { padding: 18px 18px 12px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 19px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0; font-size: 13px; }
+  .stats { display: flex; gap: 18px; margin-top: 12px; }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .controls { padding: 12px 18px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; }
+  input[type=search] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; background: var(--bg); }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 5px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 4px 10px; font: inherit; font-size: 12.5px; cursor: pointer; color: var(--ink); }
+  .chip[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+  ul.list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+  ul.list li { padding: 9px 18px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  ul.list li:hover, ul.list li:focus { background: var(--bg); outline: none; }
+  ul.list .n { font-weight: 600; }
+  ul.list .m { color: var(--muted); font-size: 12.5px; }
+  footer { padding: 10px 18px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  footer a { color: inherit; }
+  #map { height: 100%; }
+  .leaflet-popup-content { font: 13px/1.45 system-ui, sans-serif; margin: 12px 14px; }
+  .leaflet-popup-content h3 { font-size: 14px; margin: 0 0 6px; }
+  .leaflet-popup-content dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 0; }
+  .leaflet-popup-content dt { color: var(--muted); }
+  .leaflet-popup-content dd { margin: 0; }
+  .legend { background: var(--panel); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.2); font-size: 12px; line-height: 1.7; }
+  @media (max-width: 760px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: auto 55vh; height: auto; }
+    aside { border-right: 0; order: 2; }
+    #map { order: 1; height: 55vh; }
+    ul.list { max-height: 50vh; }
+    header, .controls, ul.list li, footer { padding-left: 16px; padding-right: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <header>
+      <h1>NYC Charter Schools</h1>
+      <p class="sub">Charter schools on New York State’s 2025–26 roster, at their federally reported addresses.</p>
+      <div class="stats">
+        <div class="stat"><b id="shown">–</b><span>shown on map</span></div>
+        <div class="stat"><b id="total">–</b><span>mapped in total</span></div>
+      </div>
+    </header>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search by school name or address" aria-label="Search schools">
+      <div>
+        <div class="label">Borough</div>
+        <div class="chips" id="boroughs"></div>
+      </div>
+      <div>
+        <div class="label">Authorizer</div>
+        <div class="chips" id="authorizers"></div>
+      </div>
+    </div>
+    <ul class="list" id="list" aria-label="Schools"></ul>
+    <footer>
+      Sources: <a href="https://www.nysed.gov/charter-schools/charter-schools-directory">NYSED Charter School Directory</a> (Sep 2, 2025) ·
+      <a href="https://data-nces.opendata.arcgis.com/datasets/nces::public-school-locations-2024-25">NCES School Locations 2024–25</a>.
+      <span id="unmapped-note"></span>
+      Download: <a href="data/charter_schools.csv">CSV</a> · <a href="data/charter_schools.geojson">GeoJSON</a>
+    </footer>
+  </aside>
+  <div id="map" role="region" aria-label="Map of charter schools"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const HEX = { SUNY: "#2f6fb3", Regents: "#c2571a", NYCDOE: "#2e8b57" };
+const AUTH_LABEL = { SUNY: "SUNY Trustees", Regents: "Board of Regents", NYCDOE: "NYC DOE" };
+const BOROUGHS = ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"];
+
+const map = L.map("map", { zoomControl: true }).setView([40.72, -73.94], 11);
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  maxZoom: 19, subdomains: "abcd",
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+}).addTo(map);
+
+const legend = L.control({ position: "bottomright" });
+legend.onAdd = () => {
+  const d = L.DomUtil.create("div", "legend");
+  d.innerHTML = "<b>Authorizer</b><br>" + Object.keys(HEX)
+    .map(k => `<span class="dot" style="background:${HEX[k]}"></span>${AUTH_LABEL[k]}`).join("<br>");
+  return d;
+};
+legend.addTo(map);
+
+const state = { q: "", boroughs: new Set(BOROUGHS), auth: new Set(Object.keys(HEX)) };
+let schools = [];
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function popup(p) {
+  return `<h3>${esc(p.name)}</h3><dl>
+    <dt>Address</dt><dd>${esc(p.address)}</dd>
+    <dt>Borough</dt><dd>${esc(p.borough)}</dd>
+    <dt>District</dt><dd>${esc(p.district.replace("NYC CSD", "CSD"))}</dd>
+    <dt>Opened</dt><dd>${p.year_opened}</dd>
+    <dt>Authorizer</dt><dd>${esc(AUTH_LABEL[p.authorizer] || p.authorizer)}</dd>
+  </dl>`;
+}
+
+function chips(el, values, set, label = v => v, color) {
+  values.forEach(v => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.setAttribute("aria-pressed", "true");
+    b.innerHTML = (color ? `<span class="dot" style="background:${color[v]}"></span>` : "") + esc(label(v));
+    b.onclick = () => {
+      set.has(v) ? set.delete(v) : set.add(v);
+      b.setAttribute("aria-pressed", set.has(v));
+      render();
+    };
+    el.appendChild(b);
+  });
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  let n = 0;
+  const visible = [];
+  schools.forEach(s => {
+    const p = s.p;
+    const show = state.boroughs.has(p.borough) && state.auth.has(p.authorizer) &&
+      (!q || p.name.toLowerCase().includes(q) || p.address.toLowerCase().includes(q));
+    if (show) { s.marker.addTo(map); visible.push(s); n++; } else { s.marker.remove(); }
+  });
+  visible.forEach(s => {
+    const li = document.createElement("li");
+    li.tabIndex = 0;
+    li.innerHTML = `<div class="n">${esc(s.p.name)}</div><div class="m">${esc(s.p.address)}</div>`;
+    const go = () => { map.setView(s.marker.getLatLng(), 16); s.marker.openPopup(); };
+    li.onclick = go; li.onkeydown = e => { if (e.key === "Enter") go(); };
+    list.appendChild(li);
+  });
+  document.getElementById("shown").textContent = n;
+}
+
+fetch("data/charter_schools.geojson")
+  .then(r => r.json())
+  .then(geo => {
+    schools = geo.features
+      .map(f => {
+        const p = f.properties;
+        const [lon, lat] = f.geometry.coordinates;
+        const marker = L.circleMarker([lat, lon], {
+          radius: 6, weight: 1.5, color: "#fff", fillColor: HEX[p.authorizer] || "#555", fillOpacity: 0.9
+        }).bindPopup(popup(p)).bindTooltip(p.name, { direction: "top", offset: [0, -4] });
+        return { p, marker };
+      })
+      .sort((a, b) => a.p.name.localeCompare(b.p.name));
+    document.getElementById("total").textContent = schools.length;
+    map.fitBounds(L.featureGroup(schools.map(s => s.marker)).getBounds(), { padding: [20, 20] });
+    document.getElementById("unmapped-note").textContent =
+      `${geo.metadata.unmapped} schools that opened in 2025 or later have no published coordinates yet and are listed in the repo’s unmapped_schools.csv. `;
+    render();
+  })
+  .catch(() => {
+    document.getElementById("list").innerHTML =
+      '<li class="m">Could not load data. Open this page through a web server (e.g. GitHub Pages), not as a local file.</li>';
+  });
+
+chips(document.getElementById("boroughs"), BOROUGHS, state.boroughs);
+chips(document.getElementById("authorizers"), Object.keys(HEX), state.auth, v => AUTH_LABEL[v], HEX);
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+</script>
+</body>
+</html>
