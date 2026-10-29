@@ -41,7 +41,16 @@ python scripts/build_data.py
 
 ## Limitations
 
-- **6 schools aren't on the map.** They opened in fall 2025 or 2026, and neither the federal data nor their authorizer has published a street address yet. Several likely operate inside an existing network school's building. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv).
+- **6 schools aren't on the map.** They opened in fall 2025 or 2026, and no street address has been published for them yet by the state, their authorizer, or their network. They're listed in [`data/unmapped_schools.csv`](data/unmapped_schools.csv):
+
+  | School | Borough / district | What's known |
+  |---|---|---|
+  | Achievement First Charter School 11 | Brooklyn, CSD 16 | Opened 2025; no address published |
+  | Lamad Arverne Academy Charter School | Queens, CSD 27 | Scheduled to open fall 2026 in the Rockaways; merging with Lamad Academy (Brooklyn) under one charter |
+  | Next Generation Charter School | Bronx, CSD 12 | Opening 2026; separate from Nuasin Next Generation |
+  | South Bronx Classical Charter School VI | Bronx, CSD 11 | Not yet listed among the network's campuses (I–V) |
+  | Success Academy Charter School – NYC 15 | Brooklyn, CSD 17 | Opened 2025; no address published |
+  | Success Academy Charter School – NYC 18 | Queens, CSD 25 | Opening 2026; roster lists Bronx, authorizer lists Queens |
 - **12 pins are approximate.** The dashed pins for the newest schools are placed by hand. Once NCES publishes 2025–26 locations, rerunning the build with that file will give exact positions. Explore Enrich is mapped at its state-registered address, a suite in the building that also houses the Explore network office.
 - **Borough follows the address.** Two schools have a federally reported address in a different borough than the state roster: Achievement First Legacy (roster: Brooklyn, address: St. Albans, Queens) and Atmosphere Academy (roster: Bronx, address: Marble Hill, legally Manhattan). The map uses the address.
 - **Updated locations.** Success Academy NYC 17 is listed in the Bronx on the September 2025 state roster, but its authorizer now places it in Ridgewood, Queens. The map uses the authorizer's address. The roster's "Zeta Charter School - Queens 2" appears to be the campus SUNY calls Zeta Queens Flushing.
