@@ -25,6 +25,9 @@ OUT = ROOT / "data"
 
 ROSTER_FILE = RAW / "nys-charter-school-directory-2025-09-02.xlsx"
 LOCATIONS_FILE = RAW / "nces-public-school-locations-2024-25-NY.csv"
+# Schools too new for NCES: addresses from authorizer records, with
+# coordinates estimated by hand from the address (see README).
+NEW_SCHOOLS_FILE = OUT / "new_school_addresses.csv"
 
 # NYSED county name -> borough, and NCES county name -> NYSED county name
 BOROUGH = {"New York": "Manhattan", "Kings": "Brooklyn", "Bronx": "Bronx",
@@ -119,6 +122,8 @@ def main() -> None:
     roster, locs = load_roster(), load_locations()
     roster["nces_row"] = match(roster, locs)
 
+    new = pd.read_csv(NEW_SCHOOLS_FILE, dtype=str, keep_default_na=False).set_index("name")
+
     mapped, unmapped = [], []
     for _, s in roster.iterrows():
         rec = {
@@ -130,11 +135,27 @@ def main() -> None:
             "sed_code": s["SED Code"],
         }
         if pd.isna(s["nces_row"]):
-            unmapped.append(rec)
+            if s["Charter School Name"] not in new.index:
+                unmapped.append(rec)
+                continue
+            n = new.loc[s["Charter School Name"]]
+            rec.update({
+                "borough": n["borough_override"] or rec["borough"],
+                "district": n["district_override"] or rec["district"],
+                "address": n["address"],
+                "location_source": "authorizer",
+                "precision": n["precision"],
+                "source_url": n["source"],
+                "lat": float(n["lat"]),
+                "lon": float(n["lon"]),
+            })
+            mapped.append(rec)
             continue
         loc = locs.loc[s["nces_row"]]
         rec.update({
             "address": f"{title_address(loc['STREET'])}, {loc['CITY'].title()}, NY {loc['ZIP']}",
+            "location_source": "nces",
+            "precision": "geocoded",
             "nces_id": loc["NCESSCH"],
             "lat": round(float(loc["LAT"]), 6),
             "lon": round(float(loc["LON"]), 6),
@@ -150,7 +171,7 @@ def main() -> None:
         "type": "FeatureCollection",
         "metadata": {
             "roster": "NYSED Charter School Directory, as of 2025-09-02 (2025-26 school year)",
-            "locations": "NCES EDGE Public School Locations 2024-25",
+            "locations": "NCES EDGE Public School Locations 2024-25; authorizer addresses for schools opened 2025+",
             "mapped": len(mapped),
             "unmapped": len(unmapped),
         },
@@ -161,7 +182,9 @@ def main() -> None:
     pd.DataFrame(unmapped).sort_values("name").to_csv(OUT / "unmapped_schools.csv", index=False)
     print(f"NYC charter schools on roster: {len(roster)}")
     print(f"  mapped:   {len(mapped)}")
-    print(f"  unmapped: {len(unmapped)} (opened after the 2024-25 location data)")
+    print(f"    from NCES:       {sum(r['location_source'] == 'nces' for r in mapped)}")
+    print(f"    from authorizer: {sum(r['location_source'] == 'authorizer' for r in mapped)}")
+    print(f"  unmapped: {len(unmapped)} (no published address yet)")
 
 
 if __name__ == "__main__":

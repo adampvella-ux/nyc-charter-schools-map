@@ -43,6 +43,7 @@
   .leaflet-popup-content dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 0; }
   .leaflet-popup-content dt { color: var(--muted); }
   .leaflet-popup-content dd { margin: 0; }
+  .leaflet-popup-content .note { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
   .legend { background: var(--panel); padding: 8px 10px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.2); font-size: 12px; line-height: 1.7; }
   @media (max-width: 760px) {
     .app { grid-template-columns: 1fr; grid-template-rows: auto 55vh; height: auto; }
@@ -58,7 +59,7 @@
   <aside>
     <header>
       <h1>NYC Charter Schools</h1>
-      <p class="sub">Charter schools on New York State’s 2025–26 roster, at their federally reported addresses.</p>
+      <p class="sub">Charter schools on New York State’s 2025–26 roster.</p>
       <div class="stats">
         <div class="stat"><b id="shown">–</b><span>shown on map</span></div>
         <div class="stat"><b id="total">–</b><span>mapped in total</span></div>
@@ -103,7 +104,8 @@ const legend = L.control({ position: "bottomright" });
 legend.onAdd = () => {
   const d = L.DomUtil.create("div", "legend");
   d.innerHTML = "<b>Authorizer</b><br>" + Object.keys(HEX)
-    .map(k => `<span class="dot" style="background:${HEX[k]}"></span>${AUTH_LABEL[k]}`).join("<br>");
+    .map(k => `<span class="dot" style="background:${HEX[k]}"></span>${AUTH_LABEL[k]}`).join("<br>") +
+    '<br><span class="dot" style="background:#fff;border:2px dashed #666;width:10px;height:10px"></span>New school, approx. location';
   return d;
 };
 legend.addTo(map);
@@ -120,7 +122,9 @@ function popup(p) {
     <dt>District</dt><dd>${esc(p.district.replace("NYC CSD", "CSD"))}</dd>
     <dt>Opened</dt><dd>${p.year_opened}</dd>
     <dt>Authorizer</dt><dd>${esc(AUTH_LABEL[p.authorizer] || p.authorizer)}</dd>
-  </dl>`;
+  </dl>${p.location_source === "authorizer"
+    ? `<p class="note">Opened ${p.year_opened}, so not yet in federal location data. Address from <a href="${esc(p.source_url)}" target="_blank" rel="noopener">authorizer records</a>; pin placed approximately (${esc(p.precision)}-level).</p>`
+    : ""}`;
 }
 
 function chips(el, values, set, label = v => v, color) {
@@ -167,16 +171,17 @@ fetch("data/charter_schools.geojson")
       .map(f => {
         const p = f.properties;
         const [lon, lat] = f.geometry.coordinates;
-        const marker = L.circleMarker([lat, lon], {
-          radius: 6, weight: 1.5, color: "#fff", fillColor: HEX[p.authorizer] || "#555", fillOpacity: 0.9
-        }).bindPopup(popup(p)).bindTooltip(p.name, { direction: "top", offset: [0, -4] });
+        const approx = p.location_source === "authorizer";
+        const marker = L.circleMarker([lat, lon], approx
+          ? { radius: 6, weight: 2.5, color: HEX[p.authorizer] || "#555", fillColor: "#fff", fillOpacity: 1, dashArray: "2 2" }
+          : { radius: 6, weight: 1.5, color: "#fff", fillColor: HEX[p.authorizer] || "#555", fillOpacity: 0.9 }).bindPopup(popup(p)).bindTooltip(p.name, { direction: "top", offset: [0, -4] });
         return { p, marker };
       })
       .sort((a, b) => a.p.name.localeCompare(b.p.name));
     document.getElementById("total").textContent = schools.length;
     map.fitBounds(L.featureGroup(schools.map(s => s.marker)).getBounds(), { padding: [20, 20] });
     document.getElementById("unmapped-note").textContent =
-      `${geo.metadata.unmapped} schools that opened in 2025 or later have no published coordinates yet and are listed in the repo’s unmapped_schools.csv. `;
+      `Dashed pins are schools opened since 2025, placed from authorizer addresses. ${geo.metadata.unmapped} newer schools have no published address yet (see README). `;
     render();
   })
   .catch(() => {

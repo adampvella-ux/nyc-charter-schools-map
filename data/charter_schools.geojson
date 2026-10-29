@@ -2,9 +2,9 @@
  "type": "FeatureCollection",
  "metadata": {
   "roster": "NYSED Charter School Directory, as of 2025-09-02 (2025-26 school year)",
-  "locations": "NCES EDGE Public School Locations 2024-25",
-  "mapped": 281,
-  "unmapped": 18
+  "locations": "NCES EDGE Public School Locations 2024-25; authorizer addresses for schools opened 2025+",
+  "mapped": 291,
+  "unmapped": 8
  },
  "features": [
   {
@@ -24,6 +24,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700860957",
     "address": "677 E 141st St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100106154"
    }
   },
@@ -44,6 +46,8 @@
     "authorizer": "SUNY",
     "sed_code": "343000860998",
     "address": "31-29 60th St, Woodside, NY 11377",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105306289"
    }
   },
@@ -64,6 +68,8 @@
     "authorizer": "Regents",
     "sed_code": "320700860852",
     "address": "388 Willis Ave, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011005651"
    }
   },
@@ -84,6 +90,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900860933",
     "address": "350 Linwood St, Brooklyn, NY 11208",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102806237"
    }
   },
@@ -104,6 +112,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900860993",
     "address": "982 Hegeman Ave, Brooklyn, NY 11208",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110906421"
    }
   },
@@ -124,6 +134,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860912",
     "address": "2021 Bergen St-Rm 149, Brooklyn, NY 11233",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096906014"
    }
   },
@@ -144,6 +156,8 @@
     "authorizer": "SUNY",
     "sed_code": "333200860906",
     "address": "1300 Greene Ave, Brooklyn, NY 11237",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016605902"
    }
   },
@@ -164,6 +178,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700860879",
     "address": "790 E New York Ave, Brooklyn, NY 11203",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014705821"
    }
   },
@@ -184,6 +200,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900860880",
     "address": "557 Pennsylvania Ave, Brooklyn, NY 11207",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014905824"
    }
   },
@@ -204,6 +222,8 @@
     "authorizer": "SUNY",
     "sed_code": "331300860902",
     "address": "510 Waverly Ave, Brooklyn, NY 11238",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360017005867"
    }
   },
@@ -224,6 +244,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600861082",
     "address": "118-49 Montauk St, Saint Albans, NY 11412",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360123006738"
    }
   },
@@ -244,6 +266,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900861072",
     "address": "800 Van Siclen Ave, Brooklyn, NY 11207",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111206517"
    }
   },
@@ -264,6 +288,8 @@
     "authorizer": "SUNY",
     "sed_code": "333200861045",
     "address": "200 Woodbine St, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112406457"
    }
   },
@@ -284,6 +310,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861086",
     "address": "601 Parkside Ave, Brooklyn, NY 11226",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114306591"
    }
   },
@@ -304,6 +332,8 @@
     "authorizer": "Regents",
     "sed_code": "320900861154",
     "address": "116 E 169th St, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119506687"
    }
   },
@@ -324,6 +354,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860806",
     "address": "220 E 106th St, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360003904439"
    }
   },
@@ -344,6 +376,8 @@
     "authorizer": "SUNY",
     "sed_code": "310600861176",
     "address": "532 W 215th St, New York, NY 10034",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122806736"
    }
   },
@@ -364,6 +398,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861074",
     "address": "3120 Corlear Ave, Bronx, NY 10463",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114906588"
    }
   },
@@ -384,7 +420,31 @@
     "authorizer": "Regents",
     "sed_code": "320700861062",
     "address": "403 Concord Ave, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111906495"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.9462,
+     40.824
+    ]
+   },
+   "properties": {
+    "name": "American Dream Charter School II",
+    "borough": "Manhattan",
+    "district": "NYC CSD 6",
+    "year_opened": 2025,
+    "authorizer": "Regents",
+    "sed_code": "310600861157",
+    "address": "421 W 145th St, New York, NY 10031",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://insideschools.org/school/84M387"
    }
   },
   {
@@ -404,6 +464,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861075",
     "address": "22 Marble Hill Ave, Bronx, NY 10463",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113806563"
    }
   },
@@ -424,6 +486,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600860971",
     "address": "82 Lewis Ave, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102906236"
    }
   },
@@ -444,6 +508,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600861197",
     "address": "82 Lewis Ave, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098606794"
    }
   },
@@ -464,6 +530,8 @@
     "authorizer": "SUNY",
     "sed_code": "331400861021",
     "address": "215 Heyward St, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106406305"
    }
   },
@@ -484,6 +552,8 @@
     "authorizer": "Regents",
     "sed_code": "321200861143",
     "address": "1909 Daly Ave, Bronx, NY 10460",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119806695"
    }
   },
@@ -504,6 +574,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700860994",
     "address": "192 E 151st St, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111506454"
    }
   },
@@ -524,6 +596,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861144",
     "address": "715 Ocean Terrace-Bldg E, Staten Island, NY 10301",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121306694"
    }
   },
@@ -544,6 +618,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861160",
     "address": "2336 Andrews Ave, Bronx, NY 10468",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122106719"
    }
   },
@@ -564,6 +640,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861014",
     "address": "413 E 144th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110806384"
    }
   },
@@ -584,6 +662,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861161",
     "address": "2336 Andrews Ave, Bronx, NY 10468",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122206720"
    }
   },
@@ -604,6 +684,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861106",
     "address": "600 E 156th St, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116506617"
    }
   },
@@ -624,6 +706,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "320900860913",
     "address": "1349 Inwood Ave, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095606025"
    }
   },
@@ -644,6 +728,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861155",
     "address": "925 Hutchinson River Pkway, Bronx, NY 10465",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119906688"
    }
   },
@@ -664,6 +750,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860855",
     "address": "3740 Baychester Ave Annex, Bronx, NY 10466",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360008905554"
    }
   },
@@ -684,6 +772,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861076",
     "address": "2545 Gunther Ave, Bronx, NY 10469",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112706551"
    }
   },
@@ -704,6 +794,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860859",
     "address": "1960 Benedict Ave, Bronx, NY 10462",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011305688"
    }
   },
@@ -724,6 +816,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861103",
     "address": "1804 Holland Ave, Bronx, NY 10462",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114206578"
    }
   },
@@ -744,6 +838,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861115",
     "address": "3956 Carpenter Ave, Bronx, NY 10466",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115706601"
    }
   },
@@ -764,6 +860,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861120",
     "address": "4300 Murdock Ave, Bronx, NY 10466",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118006636"
    }
   },
@@ -784,6 +882,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861121",
     "address": "1946 Bathgate Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120006675"
    }
   },
@@ -804,6 +904,8 @@
     "authorizer": "Regents",
     "sed_code": "320800860846",
     "address": "950 Longfellow Ave, Bronx, NY 10474",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360006304875"
    }
   },
@@ -824,6 +926,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "321000860914",
     "address": "3170 Webster Ave, Bronx, NY 10467",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096806074"
    }
   },
@@ -844,6 +948,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "320700860915",
     "address": "750 Concourse Village W-Lower Level, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096706008"
    }
   },
@@ -864,6 +970,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900860807",
     "address": "3872 3rd Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004204466"
    }
   },
@@ -884,6 +992,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860916",
     "address": "1501 Pitkin Ave, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096606069"
    }
   },
@@ -904,6 +1014,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800861177",
     "address": "205 Rockaway Parkway-6th Fl, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098706795"
    }
   },
@@ -924,6 +1036,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331400860809",
     "address": "545 Willoughby Ave, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004504493"
    }
   },
@@ -944,6 +1058,8 @@
     "authorizer": "SUNY",
     "sed_code": "332200860978",
     "address": "259 Parkville Ave, Brooklyn, NY 11230",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101506206"
    }
   },
@@ -964,6 +1080,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600861112",
     "address": "125 Stuyvesant Ave-Rm 213, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116006622"
    }
   },
@@ -984,6 +1102,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600860847",
     "address": "856 Quincy St, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011605708"
    }
   },
@@ -1004,6 +1124,8 @@
     "authorizer": "Regents",
     "sed_code": "331300861063",
     "address": "77 Sands St, Brooklyn, NY 11201",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111106493"
    }
   },
@@ -1024,6 +1146,8 @@
     "authorizer": "SUNY",
     "sed_code": "331300861079",
     "address": "272 Macon St, Brooklyn, NY 11216",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113406558"
    }
   },
@@ -1044,6 +1168,8 @@
     "authorizer": "SUNY",
     "sed_code": "331500861162",
     "address": "3002 Fort Hamilton Pkwy, Brooklyn, NY 11218",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120606670"
    }
   },
@@ -1064,6 +1190,8 @@
     "authorizer": "SUNY",
     "sed_code": "331300861077",
     "address": "80 Willoughby St, Brooklyn, NY 11201",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115006582"
    }
   },
@@ -1084,6 +1212,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800860935",
     "address": "341 39th St, Brooklyn, NY 11232",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099106123"
    }
   },
@@ -1104,6 +1234,8 @@
     "authorizer": "Regents",
     "sed_code": "331500861156",
     "address": "9 Hanover Pl, Brooklyn, NY 11201",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120406683"
    }
   },
@@ -1124,6 +1256,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331900860958",
     "address": "2635 Linden Blvd, Brooklyn, NY 11208",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360098906097"
    }
   },
@@ -1144,6 +1278,8 @@
     "authorizer": "Regents",
     "sed_code": "331500861011",
     "address": "500 19th St, Brooklyn, NY 11215",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110006402"
    }
   },
@@ -1164,6 +1300,8 @@
     "authorizer": "SUNY",
     "sed_code": "310200860992",
     "address": "121 Ave Of The Americas, New York, NY 10013",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104306268"
    }
   },
@@ -1184,6 +1322,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860954",
     "address": "1501 Pitkin Ave, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100206167"
    }
   },
@@ -1204,6 +1344,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860939",
     "address": "140 Montrose Ave, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360098406165"
    }
   },
@@ -1224,6 +1366,8 @@
     "authorizer": "SUNY",
     "sed_code": "333200860987",
     "address": "751 Knickerbocker Ave, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101706172"
    }
   },
@@ -1244,6 +1388,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800861033",
     "address": "9719 Flatlands Ave, Brooklyn, NY 11236",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110206414"
    }
   },
@@ -1264,6 +1410,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861163",
     "address": "755 Co Op City Blvd, Bronx, NY 10475",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122306721"
    }
   },
@@ -1284,6 +1432,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500861081",
     "address": "2041 Madison Ave, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114406597"
    }
   },
@@ -1304,6 +1454,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861130",
     "address": "685 E 182nd St, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120106679"
    }
   },
@@ -1324,6 +1476,8 @@
     "authorizer": "SUNY",
     "sed_code": "332200861050",
     "address": "465 E 29th St, Brooklyn, NY 11226",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111406511"
    }
   },
@@ -1344,6 +1498,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861025",
     "address": "88-14 Justice Ave, Elmhurst, NY 11373",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105606317"
    }
   },
@@ -1364,6 +1520,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861198",
     "address": "88-14 Justice Ave, Elmhurst, NY 11373",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098806800"
    }
   },
@@ -1384,6 +1542,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "342700860990",
     "address": "710 Hartman Lane, Far Rockaway, NY 11691",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101806192"
    }
   },
@@ -1404,6 +1564,8 @@
     "authorizer": "Regents",
     "sed_code": "321000861064",
     "address": "1960 University Ave, Bronx, NY 10453",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113306569"
    }
   },
@@ -1424,6 +1586,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200861026",
     "address": "1919 Prospect Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106606303"
    }
   },
@@ -1444,6 +1608,8 @@
     "authorizer": "Regents",
     "sed_code": "331900861065",
     "address": "1962-84 Linden Blvd, Brooklyn, NY 11207",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114506574"
    }
   },
@@ -1464,6 +1630,8 @@
     "authorizer": "SUNY",
     "sed_code": "331300860810",
     "address": "241 Emerson Pl, Brooklyn, NY 11205",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004604487"
    }
   },
@@ -1484,6 +1652,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331300860893",
     "address": "51 St Edwards St-3rd Fl, Brooklyn, NY 11205",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360015905898"
    }
   },
@@ -1504,6 +1674,8 @@
     "authorizer": "Regents",
     "sed_code": "331300861066",
     "address": "300 Adelphi-4th Fl, Brooklyn, NY 11205",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112106516"
    }
   },
@@ -1524,6 +1696,8 @@
     "authorizer": "SUNY",
     "sed_code": "332100860949",
     "address": "501 West Ave, Brooklyn, NY 11224",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100406101"
    }
   },
@@ -1544,6 +1718,8 @@
     "authorizer": "Regents",
     "sed_code": "320700861145",
     "address": "524 Courtlandt Ave, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119406693"
    }
   },
@@ -1564,6 +1740,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331800860988",
     "address": "1400 Linden Blvd, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101406171"
    }
   },
@@ -1584,6 +1762,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900861131",
     "address": "396 Grant Ave, Brooklyn, NY 11208",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117506654"
    }
   },
@@ -1604,6 +1784,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200861001",
     "address": "1000 Westchester Ave, Bronx, NY 10459",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107806310"
    }
   },
@@ -1624,6 +1806,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860989",
     "address": "207 W 133rd St, New York, NY 10030",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101006183"
    }
   },
@@ -1644,6 +1828,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860894",
     "address": "2230 5th Ave, New York, NY 10037",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360015805847"
    }
   },
@@ -1664,6 +1850,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "321200860965",
     "address": "800 Home St-Rm 205, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102706234"
    }
   },
@@ -1684,6 +1872,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860919",
     "address": "1991 2nd Ave, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096406038"
    }
   },
@@ -1704,6 +1894,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861166",
     "address": "1162 River Ave, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368096806751"
    }
   },
@@ -1724,6 +1916,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861167",
     "address": "20 Bruckner Blvd, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119606691"
    }
   },
@@ -1744,6 +1938,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861169",
     "address": "1617 Parkview Ave, Bronx, NY 10461",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122906737"
    }
   },
@@ -1764,6 +1960,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861136",
     "address": "1441 South Ave-5th Fl, Staten Island, NY 10314",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117906664"
    }
   },
@@ -1784,6 +1982,8 @@
     "authorizer": "SUNY",
     "sed_code": "331900861132",
     "address": "260 Shepherd Ave, Brooklyn, NY 11208",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121006682"
    }
   },
@@ -1804,6 +2004,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800861165",
     "address": "870 Albany Ave, Brooklyn, NY 11203",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120806698"
    }
   },
@@ -1824,6 +2026,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860995",
     "address": "2050 2nd Ave, New York, NY 10026",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104206252"
    }
   },
@@ -1844,6 +2048,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400861046",
     "address": "1573 Madison Ave-Rm 320, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109006378"
    }
   },
@@ -1864,6 +2070,8 @@
     "authorizer": "Regents",
     "sed_code": "331300861110",
     "address": "77 Sands St, Brooklyn, NY 11201",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118606645"
    }
   },
@@ -1884,6 +2092,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861133",
     "address": "79-17 51st Ave, Elmhurst, NY 11373",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117806656"
    }
   },
@@ -1904,6 +2114,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331600860975",
     "address": "616 Quincy St-3rd Fl, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104806255"
    }
   },
@@ -1924,6 +2136,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861126",
     "address": "1164 Garrison Ave, Bronx, NY 10474",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118406641"
    }
   },
@@ -1944,6 +2158,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "321100860956",
     "address": "4140 Hutchinson River Pkwy E, Bronx, NY 10475",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100506110"
    }
   },
@@ -1964,6 +2180,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310600860929",
     "address": "549 Audubon Ave-Trailer 30, New York, NY 10040",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095206000"
    }
   },
@@ -1984,6 +2202,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700860841",
     "address": "655 Parkside Ave, Brooklyn, NY 11226",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360015705846"
    }
   },
@@ -2004,6 +2224,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700860950",
     "address": "188 Rochester Ave, Brooklyn, NY 11213",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099406151"
    }
   },
@@ -2024,6 +2246,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861027",
     "address": "443 St Marks Ave-Rm 114, Brooklyn, NY 11238",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105806354"
    }
   },
@@ -2044,6 +2268,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800860702",
     "address": "1077 Remsen Ave, Brooklyn, NY 11236",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105206271"
    }
   },
@@ -2064,6 +2290,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900860839",
     "address": "14 W 170th St, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360006604877"
    }
   },
@@ -2084,6 +2312,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861028",
     "address": "296 E 140th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107006318"
    }
   },
@@ -2104,6 +2334,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861070",
     "address": "370 Gerard Ave, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112506479"
    }
   },
@@ -2124,6 +2356,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861178",
     "address": "1401 Inwood Ave, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368096906752"
    }
   },
@@ -2144,6 +2378,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861164",
     "address": "123 Linden Blvd, Brooklyn, NY 11203",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120706673"
    }
   },
@@ -2164,6 +2400,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861113",
     "address": "51-35 Reeder St 2nd Fl, Elmhurst, NY 11373",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116406623"
    }
   },
@@ -2184,6 +2422,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310300860881",
     "address": "134 W 122nd St, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360013905776"
    }
   },
@@ -2204,6 +2444,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200860866",
     "address": "1160 Beach Ave, Bronx, NY 10472",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360013605765"
    }
   },
@@ -2224,6 +2466,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200860940",
     "address": "681 Kelly St, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360098606161"
    }
   },
@@ -2244,6 +2488,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861179",
     "address": "263 E 203rd St, Bronx, NY 10458",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121706715"
    }
   },
@@ -2264,6 +2510,8 @@
     "authorizer": "Regents",
     "sed_code": "310500861012",
     "address": "2350 5th Ave, New York, NY 10037",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107606315"
    }
   },
@@ -2284,6 +2532,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800860872",
     "address": "625 Bolton Ave, Bronx, NY 10473",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011205672"
    }
   },
@@ -2304,6 +2554,8 @@
     "authorizer": "Regents",
     "sed_code": "310200861055",
     "address": "240 Bleecker St, New York, NY 10014",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108506376"
    }
   },
@@ -2324,6 +2576,8 @@
     "authorizer": "Regents",
     "sed_code": "343000860952",
     "address": "39-27 28th St, Long Island City, NY 11101",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360098706124"
    }
   },
@@ -2344,6 +2598,8 @@
     "authorizer": "Regents",
     "sed_code": "342800860824",
     "address": "84-35 152nd St, Jamaica, NY 11432",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115206577"
    }
   },
@@ -2364,6 +2620,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860812",
     "address": "132-142 E 111th St, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004704413"
    }
   },
@@ -2384,6 +2642,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310500860864",
     "address": "245 W 129th St, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360010805640"
    }
   },
@@ -2404,6 +2664,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310500860886",
     "address": "35 E 125th St, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014005777"
    }
   },
@@ -2424,6 +2686,8 @@
     "authorizer": "SUNY",
     "sed_code": "310300860875",
     "address": "21 W 111th St-Rm 357, New York, NY 10026",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360013805775"
    }
   },
@@ -2444,6 +2708,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860840",
     "address": "240 E 123rd St-3rd Fl, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360006804870"
    }
   },
@@ -2464,6 +2730,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860849",
     "address": "2351 1st Ave-4th Fl, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014105778"
    }
   },
@@ -2484,6 +2752,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860848",
     "address": "244 W 144 St-4th Fl, New York, NY 10030",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360008005528"
    }
   },
@@ -2504,6 +2774,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500861149",
     "address": "74 W 124th St, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119106671"
    }
   },
@@ -2524,7 +2796,31 @@
     "authorizer": "Regents",
     "sed_code": "320900860823",
     "address": "3565 3rd Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004804457"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.8448,
+     40.8495
+    ]
+   },
+   "properties": {
+    "name": "Haven Charter High School",
+    "borough": "Bronx",
+    "district": "NYC CSD 11",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "321100861200",
+    "address": "1529 Williamsbridge Rd, Bronx, NY 10461",
+    "location_source": "authorizer",
+    "precision": "neighborhood",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/haven-charter-high-school/"
    }
   },
   {
@@ -2544,6 +2840,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "332200860955",
     "address": "2186 Mill Ave, Brooklyn, NY 11234",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100306159"
    }
   },
@@ -2564,6 +2862,8 @@
     "authorizer": "Regents",
     "sed_code": "332100861123",
     "address": "2286 Cropsey Ave, Brooklyn, NY 11214",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116606625"
    }
   },
@@ -2584,6 +2884,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861175",
     "address": "1641 Richmond Ave, Staten Island, NY 10314",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121406686"
    }
   },
@@ -2604,6 +2906,8 @@
     "authorizer": "Regents",
     "sed_code": "331500860878",
     "address": "646 5th Ave, Brooklyn, NY 11215",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014605815"
    }
   },
@@ -2624,6 +2928,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331900860972",
     "address": "330 Alabama Ave, Brooklyn, NY 11207",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103006230"
    }
   },
@@ -2644,6 +2950,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900860835",
     "address": "1525 Brook Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360004904470"
    }
   },
@@ -2664,6 +2972,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860909",
     "address": "1640 Bronxdale Ave, Bronx, NY 10462",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360094305973"
    }
   },
@@ -2684,6 +2994,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860917",
     "address": "1500 Pelham Pkwy S, Bronx, NY 10461",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095506027"
    }
   },
@@ -2704,6 +3016,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860948",
     "address": "1500 Pelham Pkwy South, Bronx, NY 10461",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099506103"
    }
   },
@@ -2724,6 +3038,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100860982",
     "address": "1500 Pelham Pkwy S, Bronx, NY 10461",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104906265"
    }
   },
@@ -2744,6 +3060,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861029",
     "address": "1701 Fulton Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106906355"
    }
   },
@@ -2764,6 +3082,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800861030",
     "address": "1535 Story Ave, Bronx, NY 10473",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109106389"
    }
   },
@@ -2784,6 +3104,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331900860973",
     "address": "39 Truxton St, Brooklyn, NY 11233",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103106238"
    }
   },
@@ -2804,6 +3126,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310400860968",
     "address": "410 E 100th St-2nd Fl, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103606225"
    }
   },
@@ -2824,6 +3148,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000860904",
     "address": "3030 Riverdale Ave, Bronx, NY 10463",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016305923"
    }
   },
@@ -2844,6 +3170,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310600860966",
     "address": "3896 10th Ave, New York, NY 10034",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102406241"
    }
   },
@@ -2864,6 +3192,8 @@
     "authorizer": "Regents",
     "sed_code": "331800861146",
     "address": "475 E 57th St, Brooklyn, NY 11203",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120906701"
    }
   },
@@ -2884,6 +3214,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310200860819",
     "address": "17 Battery Pl, New York, NY 10004",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360005304411"
    }
   },
@@ -2904,6 +3236,8 @@
     "authorizer": "Regents",
     "sed_code": "353100860959",
     "address": "1 Corporate Commons-1 Teleport Dr, Staten Island, NY 10311",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099606147"
    }
   },
@@ -2924,6 +3258,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "320700860820",
     "address": "250 E 156th St-4th Fl, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360005404452"
    }
   },
@@ -2944,6 +3280,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700860882",
     "address": "1224 Park Pl-4th Fl, Brooklyn, NY 11213",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014805822"
    }
   },
@@ -2964,6 +3302,8 @@
     "authorizer": "SUNY",
     "sed_code": "310300861180",
     "address": "533 W 121st St, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122706735"
    }
   },
@@ -2984,6 +3324,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861150",
     "address": "2720 Jerome Ave, Bronx, NY 10468",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120206676"
    }
   },
@@ -3004,6 +3346,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861151",
     "address": "1504 Macombs Rd, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120306678"
    }
   },
@@ -3024,6 +3368,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861135",
     "address": "2246 Jerome Ave, Bronx, NY 10453",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117606647"
    }
   },
@@ -3044,6 +3390,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860883",
     "address": "625 W 133 St-Rm 308d, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014305781"
    }
   },
@@ -3064,6 +3412,8 @@
     "authorizer": "SUNY",
     "sed_code": "310600861013",
     "address": "21 Jumel Pl-Rm D109, New York, NY 10032",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107506307"
    }
   },
@@ -3084,7 +3434,31 @@
     "authorizer": "SUNY",
     "sed_code": "310500860858",
     "address": "433 W 123rd St-4th Fl, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360008205526"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.9493,
+     40.651
+    ]
+   },
+   "properties": {
+    "name": "Kwenda Collegiate Girls Charter School",
+    "borough": "Brooklyn",
+    "district": "NYC CSD 22",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "332200861199",
+    "address": "2520 Church Ave, Brooklyn, NY 11226",
+    "location_source": "authorizer",
+    "precision": "neighborhood",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/kwenda-collegiate-girls-charter-school"
    }
   },
   {
@@ -3104,6 +3478,8 @@
     "authorizer": "Regents",
     "sed_code": "331600860924",
     "address": "800 Gates Ave, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096106071"
    }
   },
@@ -3124,6 +3500,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800861168",
     "address": "1060 Clarkson Ave-4th Fl, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122406722"
    }
   },
@@ -3144,6 +3522,8 @@
     "authorizer": "Regents",
     "sed_code": "331600861003",
     "address": "1580 Dean St-3rd Fl, Brooklyn, NY 11213",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105906349"
    }
   },
@@ -3164,6 +3544,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800860903",
     "address": "730 Bryant Ave, Bronx, NY 10474",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016505889"
    }
   },
@@ -3184,6 +3566,8 @@
     "authorizer": "Regents",
     "sed_code": "331500861158",
     "address": "5323 5th Ave - 2nd Fl, Brooklyn, NY 11220",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360120506696"
    }
   },
@@ -3204,6 +3588,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861114",
     "address": "400 E 145th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115806600"
    }
   },
@@ -3224,6 +3610,8 @@
     "authorizer": "SUNY",
     "sed_code": "310100860873",
     "address": "100 Attorney St, New York, NY 10002",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360013705766"
    }
   },
@@ -3244,6 +3632,8 @@
     "authorizer": "SUNY",
     "sed_code": "310100861031",
     "address": "220 Henry St, New York, NY 10002",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107906341"
    }
   },
@@ -3264,7 +3654,31 @@
     "authorizer": "Regents",
     "sed_code": "333200861059",
     "address": "231 Palmetto St-Fl 3-Rm 327a, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109306429"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0017,
+     40.6285
+    ]
+   },
+   "properties": {
+    "name": "Math, Engineering, and Science Academy Charter High School 2",
+    "borough": "Brooklyn",
+    "district": "NYC CSD 20",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "332000861201",
+    "address": "1222 63rd St, Brooklyn, NY 11219",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/mesa-academy-charter-high-school-2/"
    }
   },
   {
@@ -3284,6 +3698,8 @@
     "authorizer": "SUNY",
     "sed_code": "342900860821",
     "address": "136-25 218th St, Springfield Gardens, NY 11413",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360005504777"
    }
   },
@@ -3304,6 +3720,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861048",
     "address": "6802 Metropolitan Ave, Middle Village, NY 11379",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108206433"
    }
   },
@@ -3324,6 +3742,8 @@
     "authorizer": "Regents",
     "sed_code": "320900861004",
     "address": "1260 Franklin Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107106328"
    }
   },
@@ -3344,6 +3764,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "320700860925",
     "address": "170 Brown Pl, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096006013"
    }
   },
@@ -3364,6 +3786,8 @@
     "authorizer": "Regents",
     "sed_code": "310600861015",
     "address": "691 St Nicholas Ave, New York, NY 10031",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107706308"
    }
   },
@@ -3384,6 +3808,8 @@
     "authorizer": "Regents",
     "sed_code": "320700861137",
     "address": "411 Wales Ave, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119306672"
    }
   },
@@ -3404,6 +3830,8 @@
     "authorizer": "Regents",
     "sed_code": "331800861057",
     "address": "9301 Ave B, Brooklyn, NY 11236",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109206415"
    }
   },
@@ -3424,6 +3852,8 @@
     "authorizer": "Regents",
     "sed_code": "331500861016",
     "address": "242 Hoyt St, Brooklyn, NY 11217",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106106343"
    }
   },
@@ -3444,6 +3874,8 @@
     "authorizer": "Regents",
     "sed_code": "342800861147",
     "address": "89-25 161st St, Jamaica, NY 11432",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121106692"
    }
   },
@@ -3464,6 +3896,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310600860887",
     "address": "1818 Amsterdam Ave, New York, NY 10031",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016705891"
    }
   },
@@ -3484,6 +3918,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861083",
     "address": "1441 South Ave-Corporate Commons, Staten Island, NY 10314",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113006565"
    }
   },
@@ -3504,6 +3940,8 @@
     "authorizer": "SUNY",
     "sed_code": "353100860984",
     "address": "355 Morningstar Rd, Staten Island, NY 10303",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101906215"
    }
   },
@@ -3524,6 +3962,8 @@
     "authorizer": "Regents",
     "sed_code": "320700860926",
     "address": "838 Brook Ave, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095906073"
    }
   },
@@ -3544,6 +3984,8 @@
     "authorizer": "SUNY",
     "sed_code": "310200861104",
     "address": "26 Broadway-12th Fl, New York, NY 10004",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115406586"
    }
   },
@@ -3564,6 +4006,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310300860963",
     "address": "311 W 120th St, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102306232"
    }
   },
@@ -3584,6 +4028,8 @@
     "authorizer": "Regents",
     "sed_code": "331400860945",
     "address": "424 Leonard St-4th Fl, Brooklyn, NY 11222",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360094806058"
    }
   },
@@ -3604,6 +4050,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900860962",
     "address": "180 W 165th St, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360102506233"
    }
   },
@@ -3624,6 +4072,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200861108",
     "address": "1180 Tinton Ave, Bronx, NY 10459",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116106615"
    }
   },
@@ -3644,6 +4094,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400861061",
     "address": "433 E 100th St, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014205779"
    }
   },
@@ -3664,6 +4116,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310300860871",
     "address": "240 W 113th St-4th Fl, New York, NY 10026",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360010905641"
    }
   },
@@ -3684,6 +4138,8 @@
     "authorizer": "SUNY",
     "sed_code": "343000860836",
     "address": "36-12 35th Ave, Astoria, NY 11106",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360005704804"
    }
   },
@@ -3704,6 +4160,8 @@
     "authorizer": "SUNY",
     "sed_code": "342700861118",
     "address": "135-25 79th St, Howard Beach, NY 11414",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118306663"
    }
   },
@@ -3724,6 +4182,8 @@
     "authorizer": "SUNY",
     "sed_code": "342400861170",
     "address": "108-68 Roosevelt Ave, Corona, NY 11368",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368097006755"
    }
   },
@@ -3744,6 +4204,8 @@
     "authorizer": "SUNY",
     "sed_code": "331500860927",
     "address": "732 Henry St, Brooklyn, NY 11231",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360094906082"
    }
   },
@@ -3764,6 +4226,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "342700860869",
     "address": "611 Beach 19th St, Far Rockaway, NY 11691",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011805732"
    }
   },
@@ -3784,6 +4248,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "321200860870",
     "address": "1001 Intervale Ave, Bronx, NY 10459",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011105662"
    }
   },
@@ -3804,6 +4270,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "343000860822",
     "address": "35-59 81st St, Jackson Heights, NY 11372",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360005904803"
    }
   },
@@ -3824,6 +4292,8 @@
     "authorizer": "Regents",
     "sed_code": "342400861128",
     "address": "45-20 83rd St, Elmhurst, NY 11373",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122506727"
    }
   },
@@ -3844,6 +4314,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861148",
     "address": "2245 Richmond Ave, Staten Island, NY 10314",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360123106740"
    }
   },
@@ -3864,6 +4336,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "342900860974",
     "address": "118-34 Riverton St, Saint Albans, NY 11412",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103506226"
    }
   },
@@ -3884,6 +4358,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "342800860969",
     "address": "122-05 Smith St, Jamaica, NY 11434",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103406224"
    }
   },
@@ -3904,6 +4380,8 @@
     "authorizer": "Regents",
     "sed_code": "320700861073",
     "address": "650 Grand Concourse, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112906566"
    }
   },
@@ -3924,6 +4402,8 @@
     "authorizer": "Regents",
     "sed_code": "310600861101",
     "address": "120 Wadsworth Ave, New York, NY 10033",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113906571"
    }
   },
@@ -3944,6 +4424,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860804",
     "address": "71-111 Convent Ave, New York, NY 10027",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360006104438"
    }
   },
@@ -3964,6 +4446,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "320700860889",
     "address": "164 Bruckner Blvd, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014405787"
    }
   },
@@ -3984,6 +4468,8 @@
     "authorizer": "Regents",
     "sed_code": "321200860898",
     "address": "977 Fox St, Bronx, NY 10459",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016105893"
    }
   },
@@ -4004,6 +4490,8 @@
     "authorizer": "Regents",
     "sed_code": "320700861035",
     "address": "333 E 135th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110506385"
    }
   },
@@ -4024,6 +4512,8 @@
     "authorizer": "Regents",
     "sed_code": "320900861084",
     "address": "3458 Third Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113206570"
    }
   },
@@ -4044,7 +4534,31 @@
     "authorizer": "Regents",
     "sed_code": "320700861122",
     "address": "757 Concourse Village West, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115606620"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.8955,
+     40.8818
+    ]
+   },
+   "properties": {
+    "name": "South Bronx Classical Charter School V",
+    "borough": "Bronx",
+    "district": "NYC CSD 8",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "320800861204",
+    "address": "3880 Sedgwick Ave, Bronx, NY 10463",
+    "location_source": "authorizer",
+    "precision": "neighborhood",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/south-bronx-classical-charter-school-v/"
    }
   },
   {
@@ -4064,6 +4578,8 @@
     "authorizer": "Regents",
     "sed_code": "320900861100",
     "address": "1110 Washington Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114706595"
    }
   },
@@ -4084,6 +4600,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861068",
     "address": "766 Westchester Ave, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113106555"
    }
   },
@@ -4104,6 +4622,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "310500860928",
     "address": "222 W 134th St-Rm 111, New York, NY 10030",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095806007"
    }
   },
@@ -4124,6 +4644,8 @@
     "authorizer": "Regents",
     "sed_code": "353100861159",
     "address": "829 Father Capodanno Blvd, Staten Island, NY 10305",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368097106759"
    }
   },
@@ -4144,6 +4666,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861080",
     "address": "609 Jackson Ave, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113706552"
    }
   },
@@ -4164,6 +4688,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400861171",
     "address": "445 E 115th St, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119206705"
    }
   },
@@ -4184,6 +4710,8 @@
     "authorizer": "SUNY",
     "sed_code": "331400861007",
     "address": "70 Tompkins Ave-2nd Fl, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105406295"
    }
   },
@@ -4204,6 +4732,8 @@
     "authorizer": "SUNY",
     "sed_code": "332100861075",
     "address": "99 Ave P-4th Fl, Brooklyn, NY 11204",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112206469"
    }
   },
@@ -4224,6 +4754,8 @@
     "authorizer": "SUNY",
     "sed_code": "332200861076",
     "address": "1420 E 68th St-3rd Fl, Brooklyn, NY 11234",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112306534"
    }
   },
@@ -4244,6 +4776,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800861074",
     "address": "885 Bolton Ave-3rd Fl, Bronx, NY 10473",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360112006529"
    }
   },
@@ -4264,7 +4798,31 @@
     "authorizer": "SUNY",
     "sed_code": "321000861088",
     "address": "268 East 207th St, Bronx, NY 10467",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115906610"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.899,
+     40.703
+    ]
+   },
+   "properties": {
+    "name": "Success Academy Charter School - NYC 17",
+    "borough": "Queens",
+    "district": "NYC CSD 24",
+    "year_opened": 2026,
+    "authorizer": "SUNY",
+    "sed_code": "321000861205",
+    "address": "58-23 Catalpa Ave, Ridgewood, NY 11385",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/success-academy-charter-school-17/"
    }
   },
   {
@@ -4284,6 +4842,8 @@
     "authorizer": "SUNY",
     "sed_code": "342900861077",
     "address": "147-65 249th St, Rosedale, NY 11422",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111606476"
    }
   },
@@ -4304,6 +4864,8 @@
     "authorizer": "SUNY",
     "sed_code": "332200861039",
     "address": "3000 Ave X, Brooklyn, NY 11235",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108606403"
    }
   },
@@ -4324,6 +4886,8 @@
     "authorizer": "SUNY",
     "sed_code": "342900861078",
     "address": "132-55 Ridgedale St-3rd Fl, Springfield Gardens, NY 11413",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111806486"
    }
   },
@@ -4344,6 +4908,8 @@
     "authorizer": "SUNY",
     "sed_code": "310600861073",
     "address": "701 Fort Washington Ave, New York, NY 10040",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360111006501"
    }
   },
@@ -4364,6 +4930,8 @@
     "authorizer": "SUNY",
     "sed_code": "331400861022",
     "address": "211 Throop Ave-3rd Fl, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106306327"
    }
   },
@@ -4384,6 +4952,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600861095",
     "address": "787 Lafayette Ave, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114006583"
    }
   },
@@ -4404,6 +4974,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700860981",
     "address": "339 Morris Ave-2nd Fl, Bronx, NY 10451",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101106211"
    }
   },
@@ -4424,6 +4996,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900860980",
     "address": "450 St Paul'S Pl-5th Fl, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101206219"
    }
   },
@@ -4444,6 +5018,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800861044",
     "address": "965 Longwood Ave-Floor 2, Bronx, NY 10459",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109606390"
    }
   },
@@ -4464,6 +5040,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861089",
     "address": "604 E 139th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368096606749"
    }
   },
@@ -4484,6 +5062,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861097",
     "address": "604 E 139th St, Bronx, NY 10454",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368096706750"
    }
   },
@@ -4504,6 +5084,8 @@
     "authorizer": "SUNY",
     "sed_code": "333200861096",
     "address": "139 Menahan St, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114606580"
    }
   },
@@ -4524,6 +5106,8 @@
     "authorizer": "SUNY",
     "sed_code": "331500861023",
     "address": "284 Baltic St-Lower Level, Brooklyn, NY 11201",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106006359"
    }
   },
@@ -4544,6 +5128,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861041",
     "address": "330 Crown St-5th Fl, Brooklyn, NY 11225",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109506413"
    }
   },
@@ -4564,6 +5150,8 @@
     "authorizer": "SUNY",
     "sed_code": "342700861090",
     "address": "10-45 Nameoke St-3rd Fl, Far Rockaway, NY 11691",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115106581"
    }
   },
@@ -4584,6 +5172,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861094",
     "address": "15 Snyder Ave, Brooklyn, NY 11226",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114806585"
    }
   },
@@ -4604,6 +5194,8 @@
     "authorizer": "SUNY",
     "sed_code": "310300860897",
     "address": "34 W 118th St-2nd Fl, New York, NY 10026",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360016905862"
    }
   },
@@ -4624,6 +5216,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860921",
     "address": "144 E 128th St-3rd Fl, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095406017"
    }
   },
@@ -4644,6 +5238,8 @@
     "authorizer": "SUNY",
     "sed_code": "310400860922",
     "address": "410 E 100th St-4th Fl, New York, NY 10029",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096206037"
    }
   },
@@ -4664,6 +5260,8 @@
     "authorizer": "SUNY",
     "sed_code": "310300860923",
     "address": "240 W 113th St-3rd Fl, New York, NY 10026",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095306018"
    }
   },
@@ -4684,6 +5282,8 @@
     "authorizer": "SUNY",
     "sed_code": "310500860979",
     "address": "301 W 140th St-3rd Fl, New York, NY 10030",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100906212"
    }
   },
@@ -4704,6 +5304,8 @@
     "authorizer": "SUNY",
     "sed_code": "310200861043",
     "address": "439 W 49th St-2nd Fl, New York, NY 10019",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109906375"
    }
   },
@@ -4724,6 +5326,8 @@
     "authorizer": "SUNY",
     "sed_code": "310200861087",
     "address": "500 W 41st St, New York, NY 10036",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116706607"
    }
   },
@@ -4744,6 +5348,8 @@
     "authorizer": "SUNY",
     "sed_code": "320800861098",
     "address": "2169 Blackrock Ave, Bronx, NY 10472",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098206786"
    }
   },
@@ -4764,6 +5370,8 @@
     "authorizer": "SUNY",
     "sed_code": "342700861100",
     "address": "109-55 128th St, South Ozone Park, NY 11420",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098906801"
    }
   },
@@ -4784,6 +5392,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861091",
     "address": "760 East Gun Hill Rd, Bronx, NY 10467",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098406789"
    }
   },
@@ -4804,6 +5414,8 @@
     "authorizer": "SUNY",
     "sed_code": "321100861092",
     "address": "760 East Gun Hill Rd, Bronx, NY 10467",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098506790"
    }
   },
@@ -4824,6 +5436,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000861093",
     "address": "124 Eames Pl, Bronx, NY 10468",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "368098306788"
    }
   },
@@ -4844,6 +5458,8 @@
     "authorizer": "SUNY",
     "sed_code": "331700861040",
     "address": "801 Park Pl-4th Fl, Brooklyn, NY 11216",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108906412"
    }
   },
@@ -4864,6 +5480,8 @@
     "authorizer": "SUNY",
     "sed_code": "342700861099",
     "address": "120-27 141st St, Jamaica, NY 11436",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360114106598"
    }
   },
@@ -4884,6 +5502,8 @@
     "authorizer": "SUNY",
     "sed_code": "310200861042",
     "address": "40 Irving Pl-2nd Fl, New York, NY 10003",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108306374"
    }
   },
@@ -4904,6 +5524,8 @@
     "authorizer": "SUNY",
     "sed_code": "310300861008",
     "address": "145 W 84th St-2nd Fl, New York, NY 10024",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103906260"
    }
   },
@@ -4924,6 +5546,8 @@
     "authorizer": "SUNY",
     "sed_code": "331400861024",
     "address": "183 S 3rd St-4th Fl, Brooklyn, NY 11211",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106206346"
    }
   },
@@ -4944,6 +5568,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "331500860953",
     "address": "27 Huntington St, Brooklyn, NY 11231",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099806114"
    }
   },
@@ -4964,6 +5590,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600860918",
     "address": "800 Gates Ave-4th Fl, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096506044"
    }
   },
@@ -4984,6 +5612,8 @@
     "authorizer": "SUNY",
     "sed_code": "331300860901",
     "address": "141 Macon St-1st Fl, Brooklyn, NY 11216",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360017205868"
    }
   },
@@ -5004,6 +5634,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860941",
     "address": "51 Christopher Ave, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360099306157"
    }
   },
@@ -5024,6 +5656,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860942",
     "address": "985 Rockaway Ave-3rd Fl, Brooklyn, NY 11212",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360101606201"
    }
   },
@@ -5044,6 +5678,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800860943",
     "address": "1070 E 104th St, Brooklyn, NY 11236",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360110606410"
    }
   },
@@ -5064,6 +5700,8 @@
     "authorizer": "SUNY",
     "sed_code": "332300860936",
     "address": "1137 Herkimer St-2nd Fl, Brooklyn, NY 11233",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360103206229"
    }
   },
@@ -5084,6 +5722,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600860860",
     "address": "225 Patchen Ave, Brooklyn, NY 11233",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011405700"
    }
   },
@@ -5104,6 +5744,8 @@
     "authorizer": "SUNY",
     "sed_code": "331600860938",
     "address": "794 Monroe St-3rd Fl, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360100006112"
    }
   },
@@ -5124,6 +5766,8 @@
     "authorizer": "SUNY",
     "sed_code": "331800860908",
     "address": "905 Winthrop St, Brooklyn, NY 11203",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360094405974"
    }
   },
@@ -5144,6 +5788,8 @@
     "authorizer": "SUNY",
     "sed_code": "331400860885",
     "address": "157 Wilson St-4th Fl, Brooklyn, NY 11211",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360014505814"
    }
   },
@@ -5164,6 +5810,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000860999",
     "address": "99 Terrace View Ave-Rm 254, Bronx, NY 10463",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104706254"
    }
   },
@@ -5184,6 +5832,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861017",
     "address": "900 Tinton Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107206365"
    }
   },
@@ -5204,6 +5854,8 @@
     "authorizer": "Regents",
     "sed_code": "332200861053",
     "address": "3000 Ave X, Brooklyn, NY 11235",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360108806425"
    }
   },
@@ -5224,6 +5876,8 @@
     "authorizer": "Regents",
     "sed_code": "342700861054",
     "address": "156-10 Baisley Blvd, Jamaica, NY 11434",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360113606549"
    }
   },
@@ -5244,6 +5898,8 @@
     "authorizer": "SUNY",
     "sed_code": "321000860704",
     "address": "99 Terrace View Ave-Rm 360, Bronx, NY 10463",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360104106263"
    }
   },
@@ -5264,6 +5920,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861018",
     "address": "900 Tinton Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360107306320"
    }
   },
@@ -5284,6 +5942,8 @@
     "authorizer": "Regents",
     "sed_code": "342700861052",
     "address": "100-00 Beach Channel Dr, Rockaway Park, NY 11694",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360116206621"
    }
   },
@@ -5304,6 +5964,8 @@
     "authorizer": "Regents",
     "sed_code": "331300861056",
     "address": "432 Monroe St, Brooklyn, NY 11221",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360109406404"
    }
   },
@@ -5324,6 +5986,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700860920",
     "address": "600 St Ann'S Ave-4th Fl, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360096306039"
    }
   },
@@ -5344,6 +6008,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861173",
     "address": "470 Jackson Ave, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360119706707"
    }
   },
@@ -5364,6 +6030,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861107",
     "address": "447 Wales Ave, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118206634"
    }
   },
@@ -5384,6 +6052,8 @@
     "authorizer": "Regents",
     "sed_code": "332200861006",
     "address": "1256 E 21st St, Brooklyn, NY 11210",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106506342"
    }
   },
@@ -5404,6 +6074,8 @@
     "authorizer": "Regents",
     "sed_code": "320800861139",
     "address": "671 Prospect Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360118706628"
    }
   },
@@ -5424,6 +6096,8 @@
     "authorizer": "SUNY",
     "sed_code": "343000861010",
     "address": "31-20 37th St, Astoria, NY 11103",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360106706319"
    }
   },
@@ -5444,7 +6118,31 @@
     "authorizer": "SUNY",
     "sed_code": "310400861007",
     "address": "240 East 123rd St, New York, NY 10035",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360105706324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.923,
+     40.7003
+    ]
+   },
+   "properties": {
+    "name": "Urban Dove Team Charter School V",
+    "borough": "Brooklyn",
+    "district": "NYC CSD 13",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "331300861210",
+    "address": "181 Suydam St, Brooklyn, NY 11221",
+    "location_source": "authorizer",
+    "precision": "neighborhood",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/urban-dove-team-charter-school-v/"
    }
   },
   {
@@ -5464,6 +6162,8 @@
     "authorizer": "SUNY",
     "sed_code": "342800861152",
     "address": "97-29 64th Rd, Rego Park, NY 11374",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121206684"
    }
   },
@@ -5484,6 +6184,8 @@
     "authorizer": "NYCDOE",
     "sed_code": "343000860932",
     "address": "36-24 12th St, Long Island City, NY 11106",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360095706068"
    }
   },
@@ -5504,6 +6206,8 @@
     "authorizer": "Regents",
     "sed_code": "310600861111",
     "address": "528 W 162nd St, New York, NY 10032",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360115506608"
    }
   },
@@ -5524,6 +6228,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861174",
     "address": "1332 Fulton Ave, Bronx, NY 10456",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360122006718"
    }
   },
@@ -5544,6 +6250,8 @@
     "authorizer": "Regents",
     "sed_code": "331400860865",
     "address": "198 Varet St, Brooklyn, NY 11206",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360011505705"
    }
   },
@@ -5564,6 +6272,8 @@
     "authorizer": "SUNY",
     "sed_code": "321200861182",
     "address": "1910 Arthur Ave, Bronx, NY 10457",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121906717"
    }
   },
@@ -5584,6 +6294,8 @@
     "authorizer": "SUNY",
     "sed_code": "320900861181",
     "address": "1475 Macombs Rd, Bronx, NY 10452",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360121806716"
    }
   },
@@ -5604,7 +6316,75 @@
     "authorizer": "SUNY",
     "sed_code": "310600861140",
     "address": "401 W 218th St, New York, NY 10034",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117106637"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.8338,
+     40.7568
+    ]
+   },
+   "properties": {
+    "name": "Zeta Charter School - Queens 2",
+    "borough": "Queens",
+    "district": "NYC CSD 24",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "342400861208",
+    "address": "133-50 41st Ave, Flushing, NY 11355",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/zeta-charter-school-7/"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.867,
+     40.7365
+    ]
+   },
+   "properties": {
+    "name": "Zeta Charter School - Queens Elmhurst",
+    "borough": "Queens",
+    "district": "NYC CSD 24",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "342400861207",
+    "address": "55-30 Junction Blvd, Elmhurst, NY 11373",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/zeta-charter-school-5/"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.7985,
+     40.7048
+    ]
+   },
+   "properties": {
+    "name": "Zeta Charter School - Queens Jamaica",
+    "borough": "Queens",
+    "district": "NYC CSD 24",
+    "year_opened": 2025,
+    "authorizer": "SUNY",
+    "sed_code": "342400861209",
+    "address": "159-26 Jamaica Ave, Jamaica, NY 11432",
+    "location_source": "authorizer",
+    "precision": "block",
+    "source_url": "https://www.newyorkcharters.org/charter-schools/zeta-charter-school-8/"
    }
   },
   {
@@ -5624,6 +6404,8 @@
     "authorizer": "SUNY",
     "sed_code": "320700861141",
     "address": "425 Westchester Ave, Bronx, NY 10455",
+    "location_source": "nces",
+    "precision": "geocoded",
     "nces_id": "360117706638"
    }
   }

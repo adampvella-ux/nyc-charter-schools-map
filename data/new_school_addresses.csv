@@ -1,11 +1,11 @@
-name,address,source,note
-American Dream Charter School II,"421 W 145th St, New York, NY 10031",https://insideschools.org/school/84M387,
-Haven Charter High School,"1529 Williamsbridge Rd, Bronx, NY 10461",https://www.newyorkcharters.org/charter-schools/haven-charter-high-school/,
-Kwenda Collegiate Girls Charter School,"2520 Church Ave, Brooklyn, NY 11226",https://www.newyorkcharters.org/charter-schools/kwenda-collegiate-girls-charter-school,
-"Math, Engineering, and Science Academy Charter High School 2","1222 63rd St, Brooklyn, NY 11219",https://www.newyorkcharters.org/charter-schools/mesa-academy-charter-high-school-2/,
-South Bronx Classical Charter School V,"3880 Sedgwick Ave, Bronx, NY 10463",https://www.newyorkcharters.org/charter-schools/south-bronx-classical-charter-school-v/,
-Success Academy Charter School - NYC 17,"58-23 Catalpa Ave, Ridgewood, NY 11385",https://www.newyorkcharters.org/charter-schools/success-academy-charter-school-17/,State roster lists Bronx CSD 10; authorizer now lists Queens
-Urban Dove Team Charter School V,"181 Suydam St, Brooklyn, NY 11221",https://www.newyorkcharters.org/charter-schools/urban-dove-team-charter-school-v/,
-Zeta Charter School - Queens 2,"133-50 41st Ave, Flushing, NY 11355",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-7/,Authorizer lists this campus as Zeta Queens Flushing
-Zeta Charter School - Queens Elmhurst,"55-30 Junction Blvd, Elmhurst, NY 11373",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-5/,
-Zeta Charter School - Queens Jamaica,"159-26 Jamaica Ave, Jamaica, NY 11432",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-8/,
+name,address,source,note,lat,lon,precision,borough_override,district_override
+American Dream Charter School II,"421 W 145th St, New York, NY 10031",https://insideschools.org/school/84M387,,40.824,-73.9462,block,,
+Haven Charter High School,"1529 Williamsbridge Rd, Bronx, NY 10461",https://www.newyorkcharters.org/charter-schools/haven-charter-high-school/,,40.8495,-73.8448,neighborhood,,
+Kwenda Collegiate Girls Charter School,"2520 Church Ave, Brooklyn, NY 11226",https://www.newyorkcharters.org/charter-schools/kwenda-collegiate-girls-charter-school,,40.651,-73.9493,neighborhood,,
+"Math, Engineering, and Science Academy Charter High School 2","1222 63rd St, Brooklyn, NY 11219",https://www.newyorkcharters.org/charter-schools/mesa-academy-charter-high-school-2/,,40.6285,-74.0017,block,,
+South Bronx Classical Charter School V,"3880 Sedgwick Ave, Bronx, NY 10463",https://www.newyorkcharters.org/charter-schools/south-bronx-classical-charter-school-v/,,40.8818,-73.8955,neighborhood,,
+Success Academy Charter School - NYC 17,"58-23 Catalpa Ave, Ridgewood, NY 11385",https://www.newyorkcharters.org/charter-schools/success-academy-charter-school-17/,State roster lists Bronx CSD 10; authorizer now lists Queens,40.703,-73.899,block,Queens,NYC CSD 24
+Urban Dove Team Charter School V,"181 Suydam St, Brooklyn, NY 11221",https://www.newyorkcharters.org/charter-schools/urban-dove-team-charter-school-v/,,40.7003,-73.923,neighborhood,,
+Zeta Charter School - Queens 2,"133-50 41st Ave, Flushing, NY 11355",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-7/,Authorizer lists this campus as Zeta Queens Flushing,40.7568,-73.8338,block,,
+Zeta Charter School - Queens Elmhurst,"55-30 Junction Blvd, Elmhurst, NY 11373",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-5/,,40.7365,-73.867,block,,
+Zeta Charter School - Queens Jamaica,"159-26 Jamaica Ave, Jamaica, NY 11432",https://www.newyorkcharters.org/charter-schools/zeta-charter-school-8/,,40.7048,-73.7985,block,,
