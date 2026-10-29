@@ -41,8 +41,8 @@ python scripts/build_data.py
 
 ## Limitations
 
-- **6 schools aren't on the map.** They opened in fall 2025 or 2026, and neither the federal data nor their authorizer has published a street address yet. Several likely operate inside an existing network school's building. Explore Enrich is mapped at its state-registered address, a suite in the building that also houses the Explore network office. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv).
-- **12 pins are approximate.** The dashed pins for the newest schools are placed by hand. Once NCES publishes 2025–26 locations, rerunning the build with that file will give exact positions.
+- **6 schools aren't on the map.** They opened in fall 2025 or 2026, and neither the federal data nor their authorizer has published a street address yet. Several likely operate inside an existing network school's building. They're listed with borough and district in [`data/unmapped_schools.csv`](data/unmapped_schools.csv).
+- **12 pins are approximate.** The dashed pins for the newest schools are placed by hand. Once NCES publishes 2025–26 locations, rerunning the build with that file will give exact positions. Explore Enrich is mapped at its state-registered address, a suite in the building that also houses the Explore network office.
 - **Updated locations.** Success Academy NYC 17 is listed in the Bronx on the September 2025 state roster, but its authorizer now places it in Ridgewood, Queens. The map uses the authorizer's address. The roster's "Zeta Charter School - Queens 2" appears to be the campus SUNY calls Zeta Queens Flushing.
 - **One point per school, not per campus.** Some charter schools operate several buildings. The state roster lists 299 NYC schools, while the [NYC Charter Center](https://findnyccharterschools.org/) counts roughly 430 campuses. Each school is mapped at the main address it reports to the federal government.
 - **Addresses are as reported for 2024–25.** A school that moved since then will show its previous location.
